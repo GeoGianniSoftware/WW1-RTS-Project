@@ -1,0 +1,303 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5839895753323418538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38729566c1c8c804cad943e421eb2e36, type: 3}
+  m_Name: Hand Held Grenades
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -152, y: 104}
+  ports:
+    keys:
+    - prerequisite
+    - unlocks
+    values:
+    - _fieldName: prerequisite
+      _node: {fileID: -5839895753323418538}
+      _typeQualifiedName: ResearchNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: unlocks
+        node: {fileID: -3841208867510705514}
+        reroutePoints: []
+      - fieldName: unlocks
+        node: {fileID: -3655488831919461118}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: unlocks
+      _node: {fileID: -5839895753323418538}
+      _typeQualifiedName: System.Collections.Generic.List`1[[ResearchNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
+        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  prerequisite: {fileID: 0}
+  entry: {fileID: 11400000, guid: c7a692a20c9b8f4489e5d009b3092a32, type: 2}
+  completed: 0
+  unlocks: []
+--- !u!114 &-3841208867510705514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38729566c1c8c804cad943e421eb2e36, type: 3}
+  m_Name: Infantry Weapons I
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -152, y: -488}
+  ports:
+    keys:
+    - prerequisite
+    - unlocks
+    values:
+    - _fieldName: prerequisite
+      _node: {fileID: -3841208867510705514}
+      _typeQualifiedName: ResearchNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: unlocks
+      _node: {fileID: -3841208867510705514}
+      _typeQualifiedName: System.Collections.Generic.List`1[[ResearchNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
+        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: prerequisite
+        node: {fileID: -1672772244725657244}
+        reroutePoints: []
+      - fieldName: prerequisite
+        node: {fileID: -5839895753323418538}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  prerequisite: {fileID: 0}
+  entry: {fileID: 11400000, guid: 498385be7a149994494945feb6889a19, type: 2}
+  completed: 0
+  unlocks: []
+--- !u!114 &-3655488831919461118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38729566c1c8c804cad943e421eb2e36, type: 3}
+  m_Name: Support Equipment
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -472, y: -344}
+  ports:
+    keys:
+    - prerequisite
+    - unlocks
+    values:
+    - _fieldName: prerequisite
+      _node: {fileID: -3655488831919461118}
+      _typeQualifiedName: ResearchNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: unlocks
+      _node: {fileID: -3655488831919461118}
+      _typeQualifiedName: System.Collections.Generic.List`1[[ResearchNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
+        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: prerequisite
+        node: {fileID: -5839895753323418538}
+        reroutePoints: []
+      - fieldName: prerequisite
+        node: {fileID: 1078254517010886020}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  prerequisite: {fileID: 0}
+  entry: {fileID: 11400000, guid: d6fb3fece5c4b604987f22a5c0b5aa8d, type: 2}
+  completed: 0
+  unlocks: []
+--- !u!114 &-1672772244725657244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38729566c1c8c804cad943e421eb2e36, type: 3}
+  m_Name: Marksmanship
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 280, y: 104}
+  ports:
+    keys:
+    - prerequisite
+    - unlocks
+    values:
+    - _fieldName: prerequisite
+      _node: {fileID: -1672772244725657244}
+      _typeQualifiedName: ResearchNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: unlocks
+        node: {fileID: -3841208867510705514}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: unlocks
+      _node: {fileID: -1672772244725657244}
+      _typeQualifiedName: System.Collections.Generic.List`1[[ResearchNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
+        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  prerequisite: {fileID: 0}
+  entry: {fileID: 11400000, guid: f07ab13adefbfb5478b20406b9ce95d0, type: 2}
+  completed: 0
+  unlocks: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51447ed3273dc07498dfbdd71aa05504, type: 3}
+  m_Name: playerResearch
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -3841208867510705514}
+  - {fileID: -5839895753323418538}
+  - {fileID: -1672772244725657244}
+  - {fileID: 355521863318696798}
+  - {fileID: -3655488831919461118}
+  - {fileID: 1078254517010886020}
+--- !u!114 &355521863318696798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38729566c1c8c804cad943e421eb2e36, type: 3}
+  m_Name: Motorized Vehicles
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 248, y: -376}
+  ports:
+    keys:
+    - prerequisite
+    - unlocks
+    values:
+    - _fieldName: prerequisite
+      _node: {fileID: 355521863318696798}
+      _typeQualifiedName: ResearchNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: unlocks
+      _node: {fileID: 355521863318696798}
+      _typeQualifiedName: System.Collections.Generic.List`1[[ResearchNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
+        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: prerequisite
+        node: {fileID: 1078254517010886020}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  prerequisite: {fileID: 0}
+  entry: {fileID: 11400000, guid: 84bf8c66a6e981b498d43f1791e2888a, type: 2}
+  completed: 0
+  unlocks: []
+--- !u!114 &1078254517010886020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38729566c1c8c804cad943e421eb2e36, type: 3}
+  m_Name: Field Ambulance
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 472, y: -120}
+  ports:
+    keys:
+    - prerequisite
+    - unlocks
+    values:
+    - _fieldName: prerequisite
+      _node: {fileID: 1078254517010886020}
+      _typeQualifiedName: ResearchNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: unlocks
+        node: {fileID: 355521863318696798}
+        reroutePoints: []
+      - fieldName: unlocks
+        node: {fileID: -3655488831919461118}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: unlocks
+      _node: {fileID: 1078254517010886020}
+      _typeQualifiedName: System.Collections.Generic.List`1[[ResearchNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
+        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  prerequisite: {fileID: 0}
+  entry: {fileID: 11400000, guid: e50d3dc89a00bc14e867470fcae76884, type: 2}
+  completed: 0
+  unlocks: []

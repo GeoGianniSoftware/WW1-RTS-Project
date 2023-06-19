@@ -1,0 +1,279 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2507006951382143687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7386f6f14696c3c4e82d41826e9ef5f2, type: 3}
+  m_Name: Sit
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -888, y: -216}
+  ports:
+    keys:
+    - transitionFROM
+    - transitionTO
+    values:
+    - _fieldName: transitionFROM
+      _node: {fileID: -2507006951382143687}
+      _typeQualifiedName: BehaviorNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: transitionTO
+      _node: {fileID: -2507006951382143687}
+      _typeQualifiedName: BehaviorNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  name: Sitting
+  transitionFROM: {fileID: 0}
+  testTexture: {fileID: 2800000, guid: 6b5550749b71277468fe1c1369658db6, type: 3}
+  transitionTO: {fileID: 0}
+  canMove: 0
+  speedMod: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247622c4ebe91ea4897ccdcb45ecb499, type: 3}
+  m_Name: BehaviourTree
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 2360088590427170684}
+  - {fileID: 8951110073800814749}
+  - {fileID: 8792461940119275816}
+  - {fileID: -2507006951382143687}
+  - {fileID: 8889955729637477823}
+  - {fileID: 8651413734289310950}
+--- !u!114 &2360088590427170684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7386f6f14696c3c4e82d41826e9ef5f2, type: 3}
+  m_Name: Idle
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -408, y: -296}
+  ports:
+    keys:
+    - transitionFROM
+    - transitionTO
+    values:
+    - _fieldName: transitionFROM
+      _node: {fileID: 2360088590427170684}
+      _typeQualifiedName: BehaviorNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: transitionTO
+      _node: {fileID: 2360088590427170684}
+      _typeQualifiedName: BehaviorNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  name: Idle
+  transitionFROM: {fileID: 0}
+  testTexture: {fileID: 2800000, guid: d4455275dc520b744bc2dff5404e4736, type: 3}
+  transitionTO: {fileID: 0}
+  canMove: 0
+  speedMod: 0
+--- !u!114 &8651413734289310950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7386f6f14696c3c4e82d41826e9ef5f2, type: 3}
+  m_Name: Walk
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 152, y: 296}
+  ports:
+    keys:
+    - transitionFROM
+    - transitionTO
+    values:
+    - _fieldName: transitionFROM
+      _node: {fileID: 8651413734289310950}
+      _typeQualifiedName: BehaviorNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: transitionTO
+      _node: {fileID: 8651413734289310950}
+      _typeQualifiedName: BehaviorNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  name: Walking
+  transitionFROM: {fileID: 0}
+  testTexture: {fileID: 0}
+  transitionTO: {fileID: 0}
+  canMove: 1
+  speedMod: 1
+--- !u!114 &8792461940119275816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7386f6f14696c3c4e82d41826e9ef5f2, type: 3}
+  m_Name: Attack
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -424, y: 312}
+  ports:
+    keys:
+    - transitionFROM
+    - transitionTO
+    values:
+    - _fieldName: transitionFROM
+      _node: {fileID: 8792461940119275816}
+      _typeQualifiedName: BehaviorNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: transitionTO
+      _node: {fileID: 8792461940119275816}
+      _typeQualifiedName: BehaviorNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  name: Attacking
+  transitionFROM: {fileID: 0}
+  testTexture: {fileID: 0}
+  transitionTO: {fileID: 0}
+  canMove: 1
+  speedMod: 1
+--- !u!114 &8889955729637477823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7386f6f14696c3c4e82d41826e9ef5f2, type: 3}
+  m_Name: Eat
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -808, y: 184}
+  ports:
+    keys:
+    - transitionFROM
+    - transitionTO
+    values:
+    - _fieldName: transitionFROM
+      _node: {fileID: 8889955729637477823}
+      _typeQualifiedName: BehaviorNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: transitionTO
+      _node: {fileID: 8889955729637477823}
+      _typeQualifiedName: BehaviorNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  name: Eating
+  transitionFROM: {fileID: 0}
+  testTexture: {fileID: 0}
+  transitionTO: {fileID: 0}
+  canMove: 0
+  speedMod: 0
+--- !u!114 &8951110073800814749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7386f6f14696c3c4e82d41826e9ef5f2, type: 3}
+  m_Name: Wonder
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 152, y: -280}
+  ports:
+    keys:
+    - transitionFROM
+    - transitionTO
+    values:
+    - _fieldName: transitionFROM
+      _node: {fileID: 8951110073800814749}
+      _typeQualifiedName: BehaviorNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: transitionTO
+      _node: {fileID: 8951110073800814749}
+      _typeQualifiedName: BehaviorNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  name: Wondering
+  transitionFROM: {fileID: 0}
+  testTexture: {fileID: 2800000, guid: 2ab2b92d7e1771b47bba0a46a6f0f6d5, type: 3}
+  transitionTO: {fileID: 0}
+  canMove: 1
+  speedMod: 0.5

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70621e401ff158c4482fcc32bde2161b, type: 3}
+  m_Name: MG Nest
+  m_EditorClassIdentifier: 
+  Name: MG Nest
+  TYPE: 3
+  cardSprite: {fileID: 0}
+  entityPrefab: {fileID: 6087755671214454, guid: b75490ec64849c642bcf7e08d00ef40d,
+    type: 3}
+  size: 1
+  infoUIOffset: {x: 0, y: 0, z: 0}
+  productionCost: -1
+  maxHealth: 0
+  baseHitChance: 0
+  continousDefense: 1
+  coreType: 2
+  backfillEntityCore: {fileID: 0}
+  flipBackfill: 0
+  replaceOnExtend: 0
+  replaceExtend: []
+  fillContinous: 1
+  continousOffset: 0
+  garrison_rangeOffset: 2
+  garrison_hitchanceOffset: -0.5

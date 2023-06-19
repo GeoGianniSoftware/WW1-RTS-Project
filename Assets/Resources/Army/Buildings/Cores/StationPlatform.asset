@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70621e401ff158c4482fcc32bde2161b, type: 3}
+  m_Name: StationPlatform
+  m_EditorClassIdentifier: 
+  Name: 
+  TYPE: 3
+  cardSprite: {fileID: 0}
+  entityPrefab: {fileID: 6285685339638340994, guid: 0b0acf06e9978c84b8dd83dea7be9871,
+    type: 3}
+  size: 4
+  infoUIOffset: {x: 0, y: 0, z: 0}
+  maxHealth: 10
+  baseHitChance: 0
+  productionCost: -1
+  supplyCost: -1
+  componentCost: -1
+  fuelCost: -1
+  price: -1
+  continousDefense: 0
+  coreType: 2
+  canBeBuilt: 1
+  backfillEntityCore: {fileID: 0}
+  flipBackfill: 0
+  replaceOnExtend: 0
+  replaceExtend: []
+  canHoldCargo: 0
+  maxSupplyStorage: 0
+  canHoldPassengers: 1
+  canBeStationed: 1
+  stationOffsetDistance: 0
+  garrison_rangeOffset: 0
+  garrison_hitchanceOffset: 0
+  fillContinous: 0
+  continousOffset: 0

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2141ce8452ec2534b90f3daaf145e49f, type: 3}
+  m_Name: Barracks
+  m_EditorClassIdentifier: 
+  Name: Barracks
+  TYPE: 6
+  cardSprite: {fileID: 0}
+  entityPrefab: {fileID: 2027430674574843836, guid: 0a354d1178c109048941947a820a4f16,
+    type: 3}
+  size: 1
+  infoUIOffset: {x: 0, y: 0, z: 0}
+  maxHealth: 25
+  baseHitChance: 0
+  productionCost: 0
+  supplyCost: -1
+  componentCost: -1
+  fuelCost: -1
+  price: -1
+  continousDefense: 0
+  coreType: 1
+  canBeBuilt: 1
+  backfillEntityCore: {fileID: 0}
+  flipBackfill: 0
+  replaceOnExtend: 0
+  replaceExtend: []
+  canHoldCargo: 1
+  maxSupplyStorage: 10
+  canBeStationed: 0
+  stationOffsetDistance: 0
+  garrison_rangeOffset: 0
+  garrison_hitchanceOffset: 0
+  productionList:
+  - {fileID: 11400000, guid: 8ae1636590670f4418e3d7909a6cbb61, type: 2}
+  - {fileID: 11400000, guid: 85bceb5b42b582e489b91d19b75a87a4, type: 2}
+  productionPerSecond: 1

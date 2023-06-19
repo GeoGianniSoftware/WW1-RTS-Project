@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac3470271e25a754fa7fe34d18165b36, type: 3}
+  m_Name: Railway
+  m_EditorClassIdentifier: 
+  Name: Railway
+  TYPE: 5
+  cardSprite: {fileID: 0}
+  entityPrefab: {fileID: 2341733857693484982, guid: c68d3ea9926626541ae826f7eb3f0f6f,
+    type: 3}
+  size: 1
+  infoUIOffset: {x: 0, y: 0, z: 0}
+  productionCost: -1
+  maxHealth: 10
+  baseHitChance: 0
+  continousDefense: 1
+  coreType: 3
+  canBeBuilt: 1
+  backfillEntityCore: {fileID: 0}
+  flipBackfill: 0
+  replaceOnExtend: 0
+  replaceExtend: []
+  canHoldCargo: 0
+  canBeStationed: 0
+  stationOffsetDistance: 0
+  garrison_rangeOffset: 0
+  garrison_hitchanceOffset: 0
+  fillContinous: 1
+  continousOffset: 2

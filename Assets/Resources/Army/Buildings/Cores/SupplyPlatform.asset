@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 911bd449e7cc96c4f8f61def1f6cf93b, type: 3}
+  m_Name: SupplyPlatform
+  m_EditorClassIdentifier: 
+  Name: Supply Platform
+  TYPE: 4
+  cardSprite: {fileID: 0}
+  entityPrefab: {fileID: 2044428654015084888, guid: 3b7e3d379bf234348a88edff8551fc0e,
+    type: 3}
+  size: 1
+  infoUIOffset: {x: 0, y: 0, z: 0}
+  productionCost: -1
+  maxHealth: 0
+  baseHitChance: 0
+  continousDefense: 0
+  coreType: 0
+  canBeBuilt: 1
+  backfillEntityCore: {fileID: 0}
+  flipBackfill: 0
+  replaceOnExtend: 0
+  replaceExtend: []
+  canHoldCargo: 1
+  canBeStationed: 0
+  stationOffsetDistance: 0
+  garrison_rangeOffset: 0
+  garrison_hitchanceOffset: 0
